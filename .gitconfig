@@ -1,0 +1,12 @@
+[user]
+	email = thoxdg@gmail.com
+	name = Thomas de Grivel
+[core]
+	excludesfile = ~/.gitignore_global
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+
+[push]
+	default = simple
