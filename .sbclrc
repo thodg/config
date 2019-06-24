@@ -1,0 +1,20 @@
+;; -*- Lisp -*-
+
+(declaim (optimize (debug 3) (safety 3) (speed 3)))
+
+(require :asdf)
+
+;(setf (uiop:getenv "CC") "gcc")
+
+;(load "~/common-lisp/thodg/system/system")
+(load "~/common-lisp/thodg/repo/repo")
+(repo:boot)
+
+;(defun sysdef-sbcl-contrib (x)
+;  (probe-file (make-pathname
+;               :directory "/usr/local/lib/sbcl/contrib/"
+;               :name x
+;               :type "asd")))
+;
+;(pushnew 'sysdef-sbcl-contrib
+;         package-system:*system-definition-search-functions*)
