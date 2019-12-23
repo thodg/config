@@ -1,0 +1,4 @@
+#!/bin/sh
+CPUTEMP=$(sysctl -n hw.sensors.cpu0.temp0 | cut -d\  -f 1)
+MBTEMP=$(sysctl -n hw.sensors.pchtemp0.temp0 | cut -d\  -f 1)
+echo "${CPUTEMP}°C ${MBTEMP}°C"

@@ -1,0 +1,2 @@
+#!/bin/sh
+xsetroot -name "$(~/bin/battery)$(~/bin/plugged) $(~/bin/temperature) $(date)"

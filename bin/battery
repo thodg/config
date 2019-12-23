@@ -1,0 +1,5 @@
+#!/bin/sh
+MAX="$(sysctl -n hw.sensors.acpibat0.watthour0 | cut -d ' ' -f 1)"      
+POWER="$(sysctl -n hw.sensors.acpibat0.watthour3 | cut -d ' ' -f 1)" 
+PERCENT=$({ echo scale=1; echo "$POWER*100/$MAX"; } | bc) 
+echo ${PERCENT}%
