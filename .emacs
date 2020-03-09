@@ -11,13 +11,17 @@
 (setq slime-net-coding-system
       'utf-8-unix)
 
+;;  ruby
+
+(setq ruby-insert-encoding-magic-comment nil)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
- '(c-basic-offset 8)
+ '(c-basic-offset 2)
  '(column-number-mode t)
  '(ido-mode (quote both) nil (ido))
  '(indent-tabs-mode nil)
@@ -32,7 +36,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 95 :width normal :foundry "Adobe" :family "Courier"))))
+ '(default ((t (:inherit nil :stipple nil :background "white" :foreground "black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 140 :width normal :foundry "Adobe" :family "Courier"))))
  '(fringe ((t (:background "white"))))
  '(mode-line ((t (:background "gray" :foreground "black"))))
  '(mode-line-inactive ((t (:inherit mode-line :background "grey" :foreground "gray30"))))
